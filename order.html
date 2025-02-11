@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Subscription - Community Crate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Community Crate</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="order.html">Subscribe</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">🛒 <span class="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="subscription-section">
+        <div class="container">
+            <h2>Choose Your Monthly Subscription</h2>
+            <div class="subscription-grid">
+                <div class="subscription-box">
+                    <h3>Fishing Crate</h3>
+                    <img src="https://via.placeholder.com/200" alt="Fishing Crate">
+                    <p>Monthly selection of fishing gear, lures, and accessories</p>
+                    <ul>
+                        <li>Premium Fishing Lures</li>
+                        <li>Seasonal Gear</li>
+                        <li>Fishing Accessories</li>
+                    </ul>
+                    <p class="price">$39.99/month</p>
+                    <button onclick="cart.addItem({name: 'Fishing Crate Subscription', price: 39.99})" class="subscribe-button">Subscribe</button>
+                </div>
+
+                <div class="subscription-box">
+                    <h3>Cosmetic Crate</h3>
+                    <img src="https://via.placeholder.com/200" alt="Cosmetic Crate">
+                    <p>Curated collection of beauty and skincare products</p>
+                    <ul>
+                        <li>Makeup Products</li>
+                        <li>Skincare Items</li>
+                        <li>Beauty Tools</li>
+                    </ul>
+                    <p class="price">$49.99/month</p>
+                    <button onclick="cart.addItem({name: 'Cosmetic Crate Subscription', price: 49.99})" class="subscribe-button">Subscribe</button>
+                </div>
+
+                <div class="subscription-box">
+                    <h3>Gaming Crate</h3>
+                    <img src="https://via.placeholder.com/200" alt="Gaming Crate">
+                    <p>Monthly gaming merchandise and collectibles</p>
+                    <ul>
+                        <li>Gaming Merchandise</li>
+                        <li>Collectible Items</li>
+                        <li>Gaming Accessories</li>
+                    </ul>
+                    <p class="price">$44.99/month</p>
+                    <button onclick="cart.addItem({name: 'Gaming Crate Subscription', price: 44.99})" class="subscribe-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Community Crate | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
