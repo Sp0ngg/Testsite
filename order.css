@@ -4,11 +4,21 @@
     background-color: #f9f9f9;
 }
 
+.subscription-info {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
 .subscription-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .subscription-box {
@@ -18,6 +28,7 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    position: relative;
 }
 
 .subscription-box:hover {
@@ -27,44 +38,77 @@
 .subscription-box h3 {
     color: #ff6f61;
     margin-bottom: 20px;
+    font-size: 1.8rem;
 }
 
-.subscription-box img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.subscription-box.featured {
+    border: 2px solid #ff6f61;
+    transform: scale(1.05);
 }
 
-.subscription-box ul {
-    list-style: none;
-    margin: 20px 0;
-    padding: 0;
+.subscription-box.featured:hover {
+    transform: scale(1.05) translateY(-5px);
 }
 
-.subscription-box ul li {
-    margin: 10px 0;
-    color: #666;
+.popular-tag {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff6f61;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .price {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
     margin: 20px 0;
+}
+
+.savings {
+    color: #2ecc71;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.perks {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    text-align: left;
+}
+
+.perks li {
+    margin: 15px 0;
+    color: #666;
+    font-size: 1.1rem;
 }
 
 .subscribe-button {
     background-color: #ff6f61;
     color: white;
     border: none;
-    padding: 12px 30px;
+    padding: 15px 40px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .subscribe-button:hover {
     background-color: #ff4f3a;
+}
+
+.subscription-note {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+    font-style: italic;
 }

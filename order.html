@@ -29,47 +29,50 @@
 
     <section class="subscription-section">
         <div class="container">
-            <h2>Choose Your Monthly Subscription</h2>
+            <h2>Choose Your Subscription Plan</h2>
+            <p class="subscription-info">Pick your subscription length - the longer you subscribe, the more you save! Each month you'll get to choose from our selection of themed crates.</p>
             <div class="subscription-grid">
                 <div class="subscription-box">
-                    <h3>Fishing Crate</h3>
-                    <img src="https://via.placeholder.com/200" alt="Fishing Crate">
-                    <p>Monthly selection of fishing gear, lures, and accessories</p>
-                    <ul>
-                        <li>Premium Fishing Lures</li>
-                        <li>Seasonal Gear</li>
-                        <li>Fishing Accessories</li>
-                    </ul>
-                    <p class="price">$39.99/month</p>
-                    <button onclick="cart.addItem({name: 'Fishing Crate Subscription', price: 39.99})" class="subscribe-button">Subscribe</button>
-                </div>
-
-                <div class="subscription-box">
-                    <h3>Cosmetic Crate</h3>
-                    <img src="https://via.placeholder.com/200" alt="Cosmetic Crate">
-                    <p>Curated collection of beauty and skincare products</p>
-                    <ul>
-                        <li>Makeup Products</li>
-                        <li>Skincare Items</li>
-                        <li>Beauty Tools</li>
-                    </ul>
+                    <h3>Monthly Plan</h3>
                     <p class="price">$49.99/month</p>
-                    <button onclick="cart.addItem({name: 'Cosmetic Crate Subscription', price: 49.99})" class="subscribe-button">Subscribe</button>
+                    <div class="savings"></div>
+                    <ul class="perks">
+                        <li>✓ Choose any crate monthly</li>
+                        <li>✓ Free shipping</li>
+                        <li>✓ Cancel anytime</li>
+                        <li>✓ Monthly newsletter</li>
+                    </ul>
+                    <button onclick="cart.addItem({name: 'Monthly Subscription', price: 49.99})" class="subscribe-button">Subscribe</button>
+                </div>
+
+                <div class="subscription-box featured">
+                    <div class="popular-tag">Most Popular</div>
+                    <h3>6-Month Plan</h3>
+                    <p class="price">$44.99/month</p>
+                    <div class="savings">Save $30 total</div>
+                    <ul class="perks">
+                        <li>✓ Choose any crate monthly</li>
+                        <li>✓ Free shipping</li>
+                        <li>✓ Cancel anytime</li>
+                        <li>✓ Monthly newsletter</li>
+                    </ul>
+                    <button onclick="cart.addItem({name: '6-Month Subscription', price: 269.94})" class="subscribe-button">Subscribe</button>
                 </div>
 
                 <div class="subscription-box">
-                    <h3>Gaming Crate</h3>
-                    <img src="https://via.placeholder.com/200" alt="Gaming Crate">
-                    <p>Monthly gaming merchandise and collectibles</p>
-                    <ul>
-                        <li>Gaming Merchandise</li>
-                        <li>Collectible Items</li>
-                        <li>Gaming Accessories</li>
+                    <h3>Annual Plan</h3>
+                    <p class="price">$39.99/month</p>
+                    <div class="savings">Save $120 total</div>
+                    <ul class="perks">
+                        <li>✓ Choose any crate monthly</li>
+                        <li>✓ Free shipping</li>
+                        <li>✓ Cancel anytime</li>
+                        <li>✓ Monthly newsletter</li>
                     </ul>
-                    <p class="price">$44.99/month</p>
-                    <button onclick="cart.addItem({name: 'Gaming Crate Subscription', price: 44.99})" class="subscribe-button">Subscribe</button>
+                    <button onclick="cart.addItem({name: 'Annual Subscription', price: 479.88})" class="subscribe-button">Subscribe</button>
                 </div>
             </div>
+            <p class="subscription-note">After subscribing, you'll be able to select your preferred crate theme each month from our selection of Fishing, Cosmetic, Gaming, and more!</p>
         </div>
     </section>
 
