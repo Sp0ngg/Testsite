@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Crate - Community Crate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="select-crate.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Community Crate</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="order.html">Subscribe</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">🛒 <span class="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="crate-selection">
+        <div class="container">
+            <h2>Select Your Monthly Crate</h2>
+            <div class="crate-grid">
+                <div class="crate-option">
+                    <img src="https://via.placeholder.com/300" alt="Anglers Crate">
+                    <h3>Anglers Crate</h3>
+                    <p>Premium fishing gear and accessories</p>
+                    <button onclick="selectCrate('Anglers Crate')" class="select-button">Select Crate</button>
+                </div>
+                <div class="crate-option">
+                    <img src="https://via.placeholder.com/300" alt="Cosmetics Crate">
+                    <h3>Cosmetics Crate</h3>
+                    <p>Luxury beauty and skincare products</p>
+                    <button onclick="selectCrate('Cosmetics Crate')" class="select-button">Select Crate</button>
+                </div>
+                <div class="crate-option">
+                    <img src="https://via.placeholder.com/300" alt="Gaming Crate">
+                    <h3>Gaming Crate</h3>
+                    <p>Latest gaming accessories and collectibles</p>
+                    <button onclick="selectCrate('Gaming Crate')" class="select-button">Select Crate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Community Crate | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+    <script src="select-crate.js"></script>
+</body>
+</html>

@@ -42,7 +42,7 @@
                         <li>✓ Cancel anytime</li>
                         <li>✓ Monthly newsletter</li>
                     </ul>
-                    <button onclick="cart.addItem({name: 'Monthly Subscription', price: 49.99})" class="subscribe-button">Subscribe</button>
+                    <button onclick="localStorage.setItem('selectedSubscription', JSON.stringify({name: 'Monthly Subscription', price: 49.99})); window.location.href='select-crate.html';" class="subscribe-button">Subscribe</button>
                 </div>
 
                 <div class="subscription-box featured">
@@ -57,7 +57,7 @@
                         <li>✓ Cancel anytime</li>
                         <li>✓ Monthly newsletter</li>
                     </ul>
-                    <button onclick="cart.addItem({name: '6-Month Subscription', price: 269.94})" class="subscribe-button">Subscribe</button>
+                    <button onclick="localStorage.setItem('selectedSubscription', JSON.stringify({name: '6-Month Subscription', price: 269.94})); window.location.href='select-crate.html';" class="subscribe-button">Subscribe</button>
                 </div>
 
                 <div class="subscription-box">
@@ -71,7 +71,7 @@
                         <li>✓ Cancel anytime</li>
                         <li>✓ Monthly newsletter</li>
                     </ul>
-                    <button onclick="cart.addItem({name: 'Annual Subscription', price: 479.88})" class="subscribe-button">Subscribe</button>
+                    <button onclick="localStorage.setItem('selectedSubscription', JSON.stringify({name: 'Annual Subscription', price: 479.88})); window.location.href='select-crate.html';" class="subscribe-button">Subscribe</button>
                 </div>
             </div>
             <p class="subscription-note">After subscribing, you'll be able to select your preferred crate theme each month from our selection of Fishing, Cosmetic, Gaming, and more!</p>
